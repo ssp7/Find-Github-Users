@@ -12,6 +12,7 @@ export class Search extends Component {
     showClear: PropTypes.func.isRequired,
     setAlert: PropTypes.func.isRequired,
   };
+
   onSubmit = (e) => {
     e.preventDefault();
     if (this.state.text === "") {
