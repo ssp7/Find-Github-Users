@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import UserItem from "./UserItem";
 import Spinner from "../Layouts/Spinner";
-import PropTypes from "prop-types";
 import GithubContext from "../../Context/Github/githubContext";
 
 const Users = () => {
@@ -18,11 +17,6 @@ const Users = () => {
       </div>
     );
   }
-};
-
-Users.propType = {
-  users: PropTypes.array.isRequired,
-  loading: PropTypes.bool.isRequired,
 };
 
 const userStyle = {
